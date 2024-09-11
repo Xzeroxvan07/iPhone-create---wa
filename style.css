@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+.iphone-frame {
+    position: relative;
+    width: 375px;
+    height: 667px;
+    border: 16px solid #333;
+    border-radius: 36px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.iphone-screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.whatsapp-header {
+    background-color: #25D366;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.whatsapp-body {
+    padding: 60px 10px 50px;
+    height: calc(100% - 110px); /* Adjust for header and footer height */
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    line-height: 1.4;
+}
+
+.received {
+    background-color: #e1ffc7;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.message-content {
+    font-size: 16px;
+}
+
+.whatsapp-footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.whatsapp-footer input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.whatsapp-footer button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
